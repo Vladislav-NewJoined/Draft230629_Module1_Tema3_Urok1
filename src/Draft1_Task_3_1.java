@@ -8,12 +8,28 @@ public class Draft1_Task_3_1 {
                 "\n\nРешение: ");
         System.out.println("Создаем класс UniversityStructure со следующими полями: Факуьтет, Срок обучения (лет)");
 
-        UniversityStructure universityStructure1 = new UniversityStructure();
+        UniversityStructure universityStructure1 = new UniversityStructure();  // - экземпляр класса
         universityStructure1.faculty = "Юриспруденция";
         universityStructure1.studyPeriod = 3;
-        UniversityStructure universityStructure2 = new UniversityStructure();
+        UniversityStructure universityStructure2 = new UniversityStructure();  // - экземпляр класса
         universityStructure2.faculty = "Программирование";
         universityStructure2.studyPeriod = 4;
+
+        System.out.println("Факультет: " + universityStructure2.faculty + ", Срок обучения, кол-во лет: " + universityStructure2.studyPeriod);
+        System.out.println(); // Это перенос строки
+
+        System.out.println("Создаем второй класс Tutors со следующими полями: Фамилия, Кол-во предметов");
+
+        Tutors tutors1 = new Tutors();  // - экземпляр класса
+        tutors1.familyName = "Иванов";
+        tutors1.academicSubjects = 1;
+        Tutors tutors2 = new Tutors();  // - экземпляр класса
+        tutors2.familyName = "Петров";
+        tutors2.academicSubjects = 2;
+
+        System.out.println("Фамилия: " + tutors2.familyName + ", Кол-во предметов: " + tutors2.academicSubjects);
+
+
 
 //        String faculty1 = "Юриспруденция";
 //        int studyPeriod1 = 3;
