@@ -23,31 +23,23 @@ public class Draft6_Task1_3_1 {
         System.out.println("Переходим на сайт https://breakingbadapi.com/api/quote/random, это API который выдает случайные цитаты из фильма. " +
                 "\n(в действительности при решении была взята другая страница ( https://text-box.ru/quotes/source/breaking-bad ), поскольку предложенная страница " +
                 "\nна момент решения не работала.)");
-        /*String page = downloadWebPage("https://text-box.ru/quotes/source/breaking-bad");*/
-        String page = downloadWebPage("https://breakingbadquotes.xyz/");
 
+        System.out.println("Созаем класс QuotesPage с полями 'Страница', 'Цитата', 'Подпись', используем его для сохранения цитат и подписей.");
 
-
-
-
-
-        //System.out.println(page);
-        /*int quoteStart = page.indexOf("text__line__content__rus text__line--cell");
-        int quoteEnd = page.indexOf("text__footer");*/
-
-        System.out.println("Созаем класс QuotesPage, используем его для сохранения цитат и подписей.");
-
+        QuotesPage quotesPage1 = new QuotesPage();
+        quotesPage1.page = downloadWebPage("https://breakingbadquotes.xyz/");
+        int quoteStart = quotesPage1.page.indexOf("<blockquote class=\"main-quote\" id=\"main-quote\">");
+        int quoteEnd = quotesPage1.page.indexOf("<cite>");
+        quotesPage1.quote = quotesPage1.page.substring(quoteStart + 55, quoteEnd - 6);
+        int signatureStart = quotesPage1.page.indexOf("<cite>");
+        int signatureEnd = quotesPage1.page.indexOf("</cite>");
+        quotesPage1.signature = quotesPage1.page.substring(signatureStart + 6, signatureEnd);
+        System.out.println();  // Это перенос строки
         System.out.println("Цитата:");
-        int quoteStart = page.indexOf("<blockquote class=\"main-quote\" id=\"main-quote\">");
-        int quoteEnd = page.indexOf("<cite>");
-        String quote1 = page.substring(quoteStart + 55, quoteEnd - 6);
-        System.out.println(quote1);
-
+        System.out.println(quotesPage1.quote);
         System.out.println("Подпись: ");
-        int signatureStart = page.indexOf("<cite>");
-        int signatureEnd = page.indexOf("</cite>");
-        String signature1 = page.substring(signatureStart + 6, signatureEnd);
-        System.out.println(signature1);
+        System.out.println(quotesPage1.signature);
+
     }
 
     private static String downloadWebPage(String url) throws IOException {
@@ -61,18 +53,6 @@ public class Draft6_Task1_3_1 {
             }
         }
         return result.toString();
-
-
-
-
-//        System.out.println("Созаем класс OperatingSystems");
-//
-//        OperatingSystems operatingSystems3 = new OperatingSystems();
-//        operatingSystems3.name = "macOS";
-//        operatingSystems3.age = 39;
-//
-//        System.out.println("Операционная система " + operatingSystems3.name + "имеет возраст "
-//                + operatingSystems3.age + " лет.");
 
     }
 }
