@@ -1,6 +1,4 @@
-import java.io.File;
-
-public class Draft1_Task_3_1 {
+public class Draft1_Task1_3_1 {
 
     //        Пример _ ППППППППППППППППППППППППППППППППППП  РАБОТАЕТ, НО БЕЗ ВЛОЖЕННЫХ КЛАССОВ
     public static void main(String[] args) {
