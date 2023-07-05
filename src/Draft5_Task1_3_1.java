@@ -11,7 +11,7 @@ import java.nio.file.Paths;
 public class Draft5_Task1_3_1 {
 
     public static void main(String[] args) throws IOException {
-        System.out.println("Задание : \n1.\tПользователь вводит\n\nРешение: ");
+        System.out.println("Задание : \n1.\tСохраните снимок дня NASA в свой созданный класc\n\nРешение: ");
 
 
         String pageNasa = downloadWebPage("https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY");
