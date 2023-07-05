@@ -1,11 +1,11 @@
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.URL;
 import java.net.URLConnection;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Scanner;
-import static java.nio.file.Paths.get;
 
 //        Пример _ ППППППППППППППППППППППППППППППППППП
 public class Draft5_Task1_3_1 {
