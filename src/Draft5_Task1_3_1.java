@@ -20,6 +20,23 @@ public class Draft5_Task1_3_1 {
         String urlPhoto = pageNasa.substring(urlBegin + 6, urlEnd - 1);
         try (InputStream in = new URL(urlPhoto).openStream()) {
             Files.copy(in, Paths.get("photo.jpg"));
+
+
+
+
+
+
+
+
+//            PhotoNASA photoNASA = new PhotoNASA();
+
+            
+
+
+
+
+
+
         }
 
         System.out.println("\n" + "Картинка сохранена!");
