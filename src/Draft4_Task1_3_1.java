@@ -15,8 +15,9 @@ public class Draft4_Task1_3_1 {
         String[] absolutePaths = new String[fifesCount];*/
         FileInformation[] fileInfos = new FileInformation[fifesCount];
 
-        System.out.println("Сохраняем информацию в массив fileInfos[] и выводим в консоль");
-        for (int i = 0; i < fifesCount; i++) {
+        System.out.println("Сохраняем информацию о файлах в директории text_files в массив fileInfos[] " +
+                "и выводим в консоль");
+            for (int i = 0; i < fifesCount; i++) {
             File currentFile = files[i];
             FileInformation info = new FileInformation();
             info.absolutePath = currentFile.getAbsolutePath();
