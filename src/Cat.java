@@ -30,6 +30,21 @@ public class Cat {
     String name;
     int age;
 
+
+    // Массив ключевых слов
+    String javaWord1;
+    String javaWord2;
+    String javaWord3;
+
+    String pythonWord1;
+    String pythonWord2;
+    String pythonWord3;
+
+//    String[] array1 = {"javaWord1", "javaWord2", "javaWord3"};
+    String[] array2;
+//    String[] array3 = new String[]{};
+
+
 //    public Cat(String name, int age) {
 //        this.name = name;
 //        this.age = age;

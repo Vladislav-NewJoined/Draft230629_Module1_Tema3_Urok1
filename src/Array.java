@@ -27,6 +27,8 @@ public class Array {
         String[] words = {"word1", "word2", "word3"};
         String[] words2 = new String[] {"word4", "word25", "word6"};
 
+        String[] array = {"javaWord1", "javaWord2", "javaWord3"};
+
 
     }
 }

@@ -5,9 +5,9 @@
 public class Draft_Classes {
     public static void main(String[] args) {
 
-        Cat cat = new Cat("Барсик", 5);
-        cat.name = "Барсик";
-        cat.age = 5;
+        /*Cat cat = new Cat("Барсик", 5);*/
+        /*cat.name = "Барсик";
+        cat.age = 5;*/
     }
 }
 
